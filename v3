@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted rgba(36, 87, 145, 0.322);
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(9, 141, 194, 0.527);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+  
+}
+
+.mask1 {
+  -webkit-mask-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Cyberpunk_Edgerunners_logo.png/800px-Cyberpunk_Edgerunners_logo.png);
+  mask-image: url(https://assets-prd.ignimgs.com/2022/06/14/image-40-1655201090040.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;    
+  max-width: 320;
+  max-height: 320;
+}
+.footer {
+  text-align: center;
+  padding: 3px;
+  color: white;
+ font-size: 33px;
+}
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
+.hide {
+      display: none;
+      font-size:300%;
+      font-size: 2rem; color: rgba(0, 0, 0, 0.5)
+    }
+        
+    .myDIV:hover + .hide {
+      display: block;
+      color: rgb(229, 255, 0);
+    }
+
+    div#myDiv {
+  transform: rotate(20deg);
+  background-color: yellow;
+  border: 1px solid black;
+}
+    .Div2 {
+          background-repeat: no-repeat;
+          background-attachment: fixed; 
+          background-size: cover;
+        }
+
+
+    body {
+    background-image: url('https://cdn.donmai.us/original/8b/21/__gawr_gura_and_bloop_hololive_and_1_more_drawn_by_quasarcake__8b210dad0a6bb3e795dcad62b547efa6.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    font-family: monospace;
+    overflow: scroll;
+    overflow-x: hidden;
+        
+        }
+
+
+        ::-webkit-scrollbar {
+        width: 0px; 
+}
+a:link, a:visited {
+  
+  color: rgb(43, 54, 252);
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: rgba(251, 255, 0, 0.5);
+}
+
+.animation {
+  font-size: 8rem;
+  text-transform: uppercase;
+  position: relative;
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05em 0 rgba(51, 255, 0, 0.75);
+
+  animation: animation 500ms infinite;
+}
+
+
+.animation span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.animation span:last-child {
+  animation: animation 375ms infinite;
+  clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+  transform: translate(0.0125em, 0.025em);
+  opacity: 0.8;
+}
+
+@keyframes animation {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em 0.05em 0 rgba(51, 255, 0, 0.75);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em 0.05em 0 rgba(51, 255, 0, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgba(51, 255, 0, 0.75);
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgba(51, 255, 0, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(51, 255, 0, 0.75);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(51, 255, 0, 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.025em 0 rgb(115, 255, 0),
+      -0.025em -0.05em 0 rgba(16, 199, 46, 0.75);
+  }
+}
+
+@media h1 {
+  *,
+  ::before,
+  ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}
+.container {
+    border-radius: 70px;
+    border: 2px;
+    border-color: black;
+          }
+          
+
+          p.ridge {border-style: ridge;}
+          
+
+
+          .hide {
+  display: none;
+}
+    
+.myDIV:hover + .hide {
+  display: block;
+  
+}
+
+
+.collapsible {
+    background-image: linear-gradient(to right, rgb(0, 174, 255) , rgba(0, 195, 255, 0.541));
+    border-radius: 70px;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: rgba(105, 119, 27, 0.5);
+  border-radius: 70px;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-image: linear-gradient(to right, rgb(217, 240, 162) , rgba(184, 236, 160, 0.822));
+  border-radius: 70px;
+  color: black;
+} 
+
+marquee{
+      font-size: 25px;
+      font-weight: 800;
+      color: rgba(0, 64, 255, 0.5);
+      
+      }
+
+
+a {
+background-color: aqua;
+border-radius: 70px;
+}
+
+</style>
+
+</head>
+<body>
+<div class="container">Portfolio v3 (Updated version of the previous portfolio)</div>
+
+  <marquee>Click the topic to show the definition/meaning.</marquee>
+<div style="padding:15px;text-align:center;">
+
+    <div class="myDIV"><h1>Portfolio in <span class="badge"><h1 class="animation" style="font-size: 90px; font-family: sans-serif; color: rgb(0, 204, 255);">Computer Programming</span></h1></div></h1>
+    <div class="hide">By Kurt Xander Gabriel P. Rivadillo</div>
+    
+  <h3>ICT 11-A</h3>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="https://drive.google.com/drive/folders/1huGeIRWQ9bX6BNnLS5n1YwbHP2ooDQrp" target="_blank">Project 1</a>
+    <a href="https://sites.google.com/view/portfolioweek2rivadillo/home" target="_blank">Portfolio v1 (old design)</a>
+<br>
+  </div>
+
+
+
+  <div class="main">
+
+    <button type="button" class="collapsible">What is CSS?  ↓</button>
+    <div class="content">
+      <p>CSS stands for Cascading Style Sheets
+        CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+        CSS saves a lot of work. It can control the layout of multiple web pages all at once
+        External stylesheets are stored in CSS files</p>
+</div>
+
+          <button type="button" class="collapsible">CSS Rounded Corners  ↓</button>
+          <div class="content">
+            <p>The CSS border-radius property defines the radius of an element's corners.</p>
+ </div>
+
+                <button type="button" class="collapsible">CSS Border Images                    ↓</button>
+                <div class="content">
+                  <p>The border-image property takes the image and slices it into nine sections, like a tic-tac-toe board. It then places the corners at the corners, and the middle sections are repeated or stretched as you specify.
+
+                    Note: For border-image to work, the element also needs the border property set!
+                  </p>
+ </div>
+ <!--Basic prog con mahaba aaaaa o-->
+                      <button type="button" class="collapsible">CSS Background ↓</button>
+                      <div class="content">
+                        <p> 
+                          <p>The CSS background property defines the initial position of the background-image for an element. It is a shorthand property for setting the background-color, background-image, background-repeat, background-attachment, and background-position CSS properties.</p>
+      
+</div>
+
+<button type="button" class="collapsible">CSS Colors  ↓</button>
+<div class="content">
+  <p>You use this keyword to specify the color of a field on a color display.</p>
+
+</div>
+
+
+<button type="button" class="collapsible">CSS Color Keywords  ↓</button>
+<div class="content">
+    <p>You use this keyword to specify the color of a field on a color display.</p>
+  <li>The transparent keyword is used to make a color transparent. This is often used to make a transparent background color for an element. </li>
+  <li>The transparent keyword is used to make a color transparent. This is often used to make a transparent background color for an element. </li>
+  <li>The inherit keyword specifies that a property should inherit its value from its parent element.</li>
+</div>
+
+
+<button type="button" class="collapsible">CSS Gradient ↓</button>
+<div class="content">
+  <p>The linear-gradient() CSS function creates an image consisting of a progressive transition between two or more colors along a straight line. Its result is an object of the gradient data type, which is a special kind of image </p>
+</div>
+
+
+<button type="button" class="collapsible">CSS Shadow  ↓</button>
+<div class="content">
+  <p>The box-shadow CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas. A box shadow is described by X and Y offsets relative to the element, blur and spread radius, and color.</p>
+</div>
+
+<button type="button" class="collapsible">CSS Text Effects  ↓</button>
+<div class="content">
+  <p>Text Effects allows us to apply different types of effect on text used in an HTML document. Below are some of the properties in CSS that can be used to add effects to text: text-overflow. word-wrap.</p>
+</div>
+  <button type="button" class="collapsible">CSS Web Fonts  ↓</button>
+  <div class="content">
+   
+<p>webfonts are custom fonts that are embedded into your website's code. That means that instead of being limited to core fonts like Arial, Georgia, or Times New Roman, you can use custom fonts to customize the look of your site headers and article text- a perfect way to help your website stay on-brand!</p>
+
+  </div>
+</div>
+</div>
+
+<button type="button" class="collapsible">CSS 2D and 3D  ↓</button>
+<div class="content">
+  <p>CSS 3D Transforms. 2D transforms allow you to move, rotate, scale, and skew HTML elements. The transform property creates the transformations. The property values are functions, such as translate , scale , and rotate .
+    </p>
+    <div>
+    This a normal div element.
+    </div>
+    
+    <div id="myDiv">
+    This div element is rotated clockwise 20 degrees.
+    </div>
+</div>
+
+<button type="button" class="collapsible">CSS Animation and Transitions  ↓</button>
+<div class="content">
+  <p>CSS transitions provide a way to control animation speed when changing CSS properties. CSS animations make it possible to animate transitions from one CSS style configuration to another. </p>
+</div>
+
+<button type="button" class="collapsible">CSS Tooltips  ↓</button>
+<div class="content">
+
+  <p>Tooltips display text (or other content) when you hover over an HTML element. The w3-tooltip class defines the element to hover over (the tooltip container). The w3-text class defines the tooltip text.</p>
+</div>
+  <button type="button" class="collapsible">CSS Images  ↓</button>
+<div class="content">
+<p>CSS Images is a module of CSS that defines what types of images can be used (the image type, containing URLs, gradients and other types of images), how to resize them and how they, and other replaced content, interact with the different layout models.</p>
+<div class="gallery">
+    <a target="_blank" href="https://images4.alphacoders.com/128/1289467.png">
+      <img src="https://images4.alphacoders.com/128/1289467.png" alt="Gura" width="600" height="400">
+    </a>
+    <div class="desc">Gawr Gura</div>
+  </div>
+
+</div>
+
+
+
+<button type="button" class="collapsible">CSS Image Reflection  ↓</button>
+<div class="content">
+  <p>The box-reflect property is used to create an image reflection. The value of the box-reflect property can be: below , above , left , or right .</p></div>
+
+  <button type="button" class="collapsible">CSS Objectfit  ↓</button>
+<div class="content">
+  <p>The object-fit CSS property sets how the content of a replaced element, such as an <img> or <video> , should be resized to fit its container. You can alter the alignment of the replaced element's content object within the element's box using the object-position property.</p>
+</div>
+</div>
+
+<button type="button" class="collapsible">Object Positioning CSS   ↓</button>
+<div class="content">
+  <p>The object-position CSS property specifies the alignment of the selected replaced element's contents within the element's box.</p>
+</div>
+
+<button type="button" class="collapsible">CSS Masking Meaning   ↓</button>
+<div class="content">
+  <p>CSS Masking provides two means for partially or fully hiding portions of visual elements: masking and clipping. Masking describes how to use another graphical element or image as a luminance or alpha mask.</p>
+
+       
+  <div class="mask1">
+    <img src="https://assets-prd.ignimgs.com/2022/06/14/image-40-1655201090040.png" alt="Cinque Terre" width="720" height="720">
+    <h2> This is a CSS Masking</h2>
+    </div>
+    
+</div>
+  <button type="button" class="collapsible">CSS Buttons and Pagination   ↓</button>
+<div class="content">
+  <p>In HTML, we use the button tag to create a button, but by using CSS properties, we can style the buttons. Buttons help us to create user interaction and event processing. They are one of the widely used elements of web pages.
+    <br>CSS pagination is a very useful technique for indexing different pages of a website on the homepage. If your website has lots of pages, you have to add some sort of pagination to each page.
+  </p>
+  
+</div>
+</div>
+
+<button type="button" class="collapsible">CSS Multiple Columns  ↓</button>
+<div class="content">
+  <p>Multiple-column layout is closely related to Paged Media, in that each column box becomes a fragment, much like a printed page becomes a fragment of an overall document. Therefore, the properties now defined in the CSS Fragmentation specification are required to control how content breaks between columns.</p>
+</div>
+  <button type="button" class="collapsible">CSS User Interface       ↓</button>
+  <div class="content">
+    <p> CSS Basic User Interface is a CSS module that lets you define the rendering and functionality of features related to the user interface.</p>
+  </div>
+</div>
+
+
+<button type="button" class="collapsible">CSS Box Sizing  ↓</button>
+<div class="content">
+  <p>This means that when you set width and height , you have to adjust the value you give to allow for any border or padding that may be added.</p>
+</div>
+ 
+<button type="button" class="collapsible">CSS Media Queries  ↓</button>
+<div class="content">
+  <p>Media queries allow you to apply CSS styles depending on a device's general type (such as print vs. screen) or other characteristics such as screen resolution or browser viewport width.</p>
+</div>
+ 
+
+
+<button type="button" class="collapsible">CSS Flexbox  ↓</button>
+<div class="content">
+  <p>Flexbox is a one-dimensional layout method for arranging items in rows or columns. Items flex (expand) to fill additional space or shrink to fit into smaller spaces. This article explains all the fundamentals.</p>
+</div>
+ 
+
+
+<button type="button" class="collapsible">CSS Image Sprites ↓</button>
+<div class="content">
+  <p>CSS Sprites are a collection of images that are combined into a single file that an HTML document can access. These images are then called into use within the HTML code to be displayed on the website</p>
+</div>
+ 
+
+
+
+<button type="button" class="collapsible">CSS Attribute Selectors  ↓</button>
+<div class="content">
+  <p>The CSS Attribute Selector is used to select an element with some specific attribute or attribute value. It is an excellent way to style the HTML elements by grouping them based on some specific attributes and the attribute selector will select those elements with similar attributes.</p>
+</div>
+ 
+
+
+<button type="button" class="collapsible">CSS Units    ↓</button>
+<div class="content">
+  <p> A CSS unit determines the size of a property you're setting for an element or its content. For example, if you wanted to set the property margin of a paragraph, you would give it a specific value. This value includes the CSS unit.</p>
+</div>
+ 
+
+
+<button type="button" class="collapsible">CSS Specificity  ↓</button>
+<div class="content">
+  <p>Specificity is the algorithm used by browsers to determine the CSS declaration that is the most relevant to an element, which in turn, determines the property value to apply to the element.</p>
+</div>
+ 
+
+<button type="button" class="collapsible">CSS The !important Rule  ↓</button>
+<div class="content">
+  <p>The !important rule in CSS is used to add more importance to a property/value than normal. In fact, if you use the !important rule, it will override ALL previous styling rules for that specific property on that element!</p>
+</div>
+ 
+
+
+<button type="button" class="collapsible">CSS Math Functions  ↓</button>
+<div class="content">
+  <p>CSS math functions are one of the powerful features of CSS. They are special CSS values that enable front-end developers to perform mathematical calculations and basic arithmetic directly within their CSS stylesheets.</p>
+</div>
+ 
+
+<button type="button" class="collapsible">CSS Multiple Columns  ↓</button>
+<div class="content">
+  <p>Multiple-column layout is closely related to Paged Media, in that each column box becomes a fragment, much like a printed page becomes a fragment of an overall document. Therefore, the properties now defined in the CSS Fragmentation specification are required to control how content breaks between columns.</p>
+</div>
+ 
+<div class="tooltip">Hover over me
+    <span class="tooltiptext" style="font-size: 32px; text-align: center;">aaaa why hover</span>
+  </div>
+
+ 
+
+    <h2 style="text-align: center; color: rgb(0, 0, 0); font-size: 40px;">Mail me for feedback thru gmail:</h2>
+    <p><a href="mailto:kurtrivadillo@gmail.com">
+      <center><img src="https://png.monster/wp-content/uploads/2020/11/gmail-logo-2020-01-4d7e53f1.png"alt="center" width="300" height="132"></center>
+      </a></p>
+      
+ 
+
+<div class="footer">
+<div style="text-align:center;padding:10px;margin-top:7px; font-size: 44px; font-weight: bold;">All Activities</div>
+<div class="pagination">
+   
+    <a href="https://github.com/kRivadillo/holiday-codes" target="_blank">TOPICS</a>
+    <a href="https://github.com/kRivadillo/ass-11-22-2022/blob/main/v4" target="_blank">ACT B</a>
+    <a href="https://github.com/kRivadillo/holiday-codes" target="_blank">ACT HOLIDAY</a>
+    <a href="https://github.com/kRivadillo/Set-c" target="_blank">SET C</a>
+    
+
+  </div>
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+
+  </script>
+</body>
+</html>

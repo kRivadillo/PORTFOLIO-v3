@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-
 div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
@@ -311,7 +310,7 @@ border-radius: 70px;
 
                 <button type="button" class="collapsible">CSS Border Images                    ↓</button>
                 <div class="content">
-                  <p>The border-image property takes the image and slices it into nine sections, like a tic-tac-toe board. It then places the corners at the corners, and the middle sections are repeated or stretched as you specify.
+                  <p style=" background-image: url('https://cdn.donmai.us/original/8b/21/__gawr_gura_and_bloop_hololive_and_1_more_drawn_by_quasarcake__8b210dad0a6bb3e795dcad62b547efa6.jpg');">The border-image property takes the image and slices it into nine sections, like a tic-tac-toe board. It then places the corners at the corners, and the middle sections are repeated or stretched as you specify.
 
                     Note: For border-image to work, the element also needs the border property set!
                   </p>
@@ -326,7 +325,7 @@ border-radius: 70px;
 
 <button type="button" class="collapsible">CSS Colors  ↓</button>
 <div class="content">
-  <p>You use this keyword to specify the color of a field on a color display.</p>
+  <p style="color: rgb(0, 81, 255);">You use this keyword to specify the color of a field on a color display.</p>
 
 </div>
 
@@ -342,23 +341,23 @@ border-radius: 70px;
 
 <button type="button" class="collapsible">CSS Gradient ↓</button>
 <div class="content">
-  <p>The linear-gradient() CSS function creates an image consisting of a progressive transition between two or more colors along a straight line. Its result is an object of the gradient data type, which is a special kind of image </p>
+  <p style=" background-image: linear-gradient(to right, rgb(0, 255, 115) , yellow);">The linear-gradient() CSS function creates an image consisting of a progressive transition between two or more colors along a straight line. Its result is an object of the gradient data type, which is a special kind of image </p>
 </div>
 
 
 <button type="button" class="collapsible">CSS Shadow  ↓</button>
 <div class="content">
-  <p>The box-shadow CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas. A box shadow is described by X and Y offsets relative to the element, blur and spread radius, and color.</p>
+  <p style="text-shadow: rgb(0, 0, 0) 1px -1px;">The box-shadow CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas. A box shadow is described by X and Y offsets relative to the element, blur and spread radius, and color.</p>
 </div>
 
 <button type="button" class="collapsible">CSS Text Effects  ↓</button>
 <div class="content">
-  <p>Text Effects allows us to apply different types of effect on text used in an HTML document. Below are some of the properties in CSS that can be used to add effects to text: text-overflow. word-wrap.</p>
+  <p style="text-decoration-style: wavy;">Text Effects allows us to apply different types of effect on text used in an HTML document. Below are some of the properties in CSS that can be used to add effects to text: text-overflow. word-wrap.</p>
 </div>
-  <button type="button" class="collapsible">CSS Web Fonts  ↓</button>
+  <button type="button" class="collapsible" >CSS Web Fonts  ↓</button>
   <div class="content">
    
-<p>webfonts are custom fonts that are embedded into your website's code. That means that instead of being limited to core fonts like Arial, Georgia, or Times New Roman, you can use custom fonts to customize the look of your site headers and article text- a perfect way to help your website stay on-brand!</p>
+<p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">webfonts are custom fonts that are embedded into your website's code. That means that instead of being limited to core fonts like Arial, Georgia, or Times New Roman, you can use custom fonts to customize the look of your site headers and article text- a perfect way to help your website stay on-brand!</p>
 
   </div>
 </div>
@@ -512,9 +511,6 @@ border-radius: 70px;
   <p>Multiple-column layout is closely related to Paged Media, in that each column box becomes a fragment, much like a printed page becomes a fragment of an overall document. Therefore, the properties now defined in the CSS Fragmentation specification are required to control how content breaks between columns.</p>
 </div>
  
-<div class="tooltip">Hover over me
-    <span class="tooltiptext" style="font-size: 32px; text-align: center;">aaaa why hover</span>
-  </div>
 
  
 
@@ -526,14 +522,17 @@ border-radius: 70px;
  
 
 <div class="footer">
-<div style="text-align:center;padding:10px;margin-top:7px; font-size: 44px; font-weight: bold;">All Activities</div>
+<div style="text-align:center;padding:10px;margin-top:7px; font-size: 44px; font-weight: bold; color: rgba(192, 0, 0, 0.76); ">All Activities RAW CODE</div>
 <div class="pagination">
-   
-    <a href="https://github.com/kRivadillo/holiday-codes" target="_blank">TOPICS</a>
-    <a href="https://github.com/kRivadillo/ass-11-22-2022/blob/main/v4" target="_blank">ACT B</a>
-    <a href="https://github.com/kRivadillo/holiday-codes" target="_blank">ACT HOLIDAY</a>
-    <a href="https://github.com/kRivadillo/Set-c" target="_blank">SET C</a>
-    
+  <div class="tooltip" style="color: rgb(208, 255, 0); text-decoration: solid; font-size: 33px; background-color: rgba(0, 255, 255, 0.678);">Hover here
+    <span class="tooltiptext" style="font-size: 32px; text-align: center;">Nice</span>
+  </div>
+
+    <a href="https://github.com/kRivadillo/holiday-codes" style="text-shadow: rgb(0, 0, 0) 2px 2px;" target="_blank">TOPICS</a>
+    <a href="https://github.com/kRivadillo/ass-11-22-2022/blob/main/v4" style="text-shadow: rgb(0, 0, 0) 2px 2px;"target="_blank">ACT B</a>
+    <a href="https://github.com/kRivadillo/holiday-codes" style="text-shadow: rgb(0, 0, 0) 2px 2px;" target="_blank">ACT HOLIDAY</a>
+    <a href="https://github.com/kRivadillo/Set-c" style="text-shadow: rgb(0, 0, 0) 2px 2px;" target="_blank">SET C</a>
+    <a href="https://github.com/kRivadillo/CSS-QUIZ" style="text-shadow: rgb(0, 0, 0) 2px 2px;" target="_blank">CSS QUIZ</a>
 
   </div>
 <script>
